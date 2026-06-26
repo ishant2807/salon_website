@@ -297,6 +297,13 @@ section {
     gap: 20px;
 }
 
+.about-intro-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
 .stat-box {
     background: var(--white);
     padding: 30px 20px;
@@ -1141,6 +1148,11 @@ footer {
         grid-template-columns: 1fr;
         gap: 40px;
     }
+
+    .about-intro-stats {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -1386,5 +1398,10 @@ footer {
     
     .about-intro .about-text-content h2 {
         font-size: 2.2rem;
+    }
+
+    .about-intro-stats {
+        grid-template-columns: 1fr;
+        gap: 15px;
     }
 }
