@@ -150,11 +150,17 @@ section {
 }
 
 .logo-img {
-    height: 52px;
+    height: 68px;
     width: auto;
     display: block;
     object-fit: contain;
     transition: var(--transition-smooth);
+}
+
+@media (max-width: 600px) {
+    .logo-img {
+        height: 56px;
+    }
 }
 
 .logo-img:hover {
